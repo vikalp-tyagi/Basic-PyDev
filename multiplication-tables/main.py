@@ -1,5 +1,3 @@
-print('**Welcome To Multiplication Tables**')
-
 # Main code
 while True:
     num = float(input('\nEnter number for table: '))
