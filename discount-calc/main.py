@@ -1,5 +1,5 @@
 # Input validation function
-def get_positive_number(prompt, is_int=False):
+def get_input(prompt, is_int=False):
     while True:
         try:
             value = int(input(prompt)) if is_int else float(input(prompt))
@@ -27,8 +27,8 @@ total_cost = 0
 
 while True:
     product_name = input("Enter product name: ")
-    product_price = get_positive_number("Enter product price: ")
-    product_qty = get_positive_number("Enter product quantity: ", is_int=True)
+    product_price = get_input("Enter product price: ")
+    product_qty = get_input("Enter product quantity: ", is_int=True)
 
     product_total = product_price * product_qty
     total_cost += product_total
